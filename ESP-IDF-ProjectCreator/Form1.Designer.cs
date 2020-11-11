@@ -119,6 +119,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ESP-IDF Project Creator";
             this.gbxMain.ResumeLayout(false);
             this.gbxMain.PerformLayout();

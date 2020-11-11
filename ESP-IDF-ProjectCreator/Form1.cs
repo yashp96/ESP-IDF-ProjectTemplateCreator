@@ -25,28 +25,36 @@ namespace ESP_IDF_ProjectCreator
             projectName = tbxProjectName.Text;
             string subDirName = @"\main";
 
-            System.IO.Directory.CreateDirectory(systemDirectory + dirName);
-            System.IO.Directory.CreateDirectory(systemDirectory + dirName + subDirName);
+            try
+            {
 
-            System.IO.File.WriteAllText(systemDirectory + dirName + gdbinitFile, gdbinitci);
+                System.IO.Directory.CreateDirectory(systemDirectory + dirName);
+                System.IO.Directory.CreateDirectory(systemDirectory + dirName + subDirName);
 
-            var cmakeliststxt = cmakelistsTemplate.Replace("NewProject", projectName);
-            System.IO.File.WriteAllText(systemDirectory + dirName + cmakeLists, cmakeliststxt);
+                System.IO.File.WriteAllText(systemDirectory + dirName + gdbinitFile, gdbinitci);
 
-            var makefiletxt = makefileTemplate.Replace("NewProject", projectName);
-            System.IO.File.WriteAllText(systemDirectory + dirName + makefile, makefiletxt);
+                var cmakeliststxt = cmakelistsTemplate.Replace("NewProject", projectName);
+                System.IO.File.WriteAllText(systemDirectory + dirName + cmakeLists, cmakeliststxt);
 
-            var maincmakelisttxt = maincmakeliststemp.Replace("NewProject", projectName);
-            System.IO.File.WriteAllText(systemDirectory + dirName + subDirName + cmakeLists, maincmakelisttxt);
-            System.IO.File.WriteAllText(systemDirectory + dirName + subDirName + componentfile, componentfiletxt);
+                var makefiletxt = makefileTemplate.Replace("NewProject", projectName);
+                System.IO.File.WriteAllText(systemDirectory + dirName + makefile, makefiletxt);
 
-            System.IO.File.WriteAllText(systemDirectory + dirName + @"\sdkconfig", "");
-            System.IO.File.WriteAllText(systemDirectory + dirName + @"\README.md", "");
+                var maincmakelisttxt = maincmakeliststemp.Replace("NewProject", projectName);
+                System.IO.File.WriteAllText(systemDirectory + dirName + subDirName + cmakeLists, maincmakelisttxt);
+                System.IO.File.WriteAllText(systemDirectory + dirName + subDirName + componentfile, componentfiletxt);
 
-            File.Copy(@"sdkconfig", systemDirectory + dirName + @"\sdkconfig", true);
-            System.IO.File.WriteAllText(systemDirectory + dirName + subDirName + @"\" + @projectName + ".c", "");
-            File.Copy(@"main.c", systemDirectory + dirName + subDirName + @"\" + projectName + ".c", true);
+                System.IO.File.WriteAllText(systemDirectory + dirName + @"\sdkconfig", "");
+                System.IO.File.WriteAllText(systemDirectory + dirName + @"\README.md", "");
 
+                File.Copy(@"sdkconfig", systemDirectory + dirName + @"\sdkconfig", true);
+                System.IO.File.WriteAllText(systemDirectory + dirName + subDirName + @"\" + @projectName + ".c", "");
+                File.Copy(@"main.c", systemDirectory + dirName + subDirName + @"\" + projectName + ".c", true);
+            }
+            catch
+            {
+
+            }
+            MessageBox.Show("Project Created", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnDestination_Click(object sender, EventArgs e)

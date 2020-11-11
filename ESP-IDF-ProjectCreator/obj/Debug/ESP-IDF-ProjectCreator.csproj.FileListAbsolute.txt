@@ -1,0 +1,11 @@
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\bin\Debug\sdkconfig
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\bin\Debug\ESP-IDF-ProjectCreator.exe.config
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\bin\Debug\ESP-IDF-ProjectCreator.exe
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\bin\Debug\ESP-IDF-ProjectCreator.pdb
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\obj\Debug\ESP_IDF_ProjectCreator.Form1.resources
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\obj\Debug\ESP_IDF_ProjectCreator.Properties.Resources.resources
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\obj\Debug\ESP-IDF-ProjectCreator.csproj.GenerateResource.cache
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\obj\Debug\ESP-IDF-ProjectCreator.exe
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\obj\Debug\ESP-IDF-ProjectCreator.pdb
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\bin\Debug\main.c
+F:\Project-D\.NET Projects\ESP-IDF-ProjectCreator\ESP-IDF-ProjectCreator\obj\Debug\ESP-IDF-ProjectCreator.csprojAssemblyReference.cache

@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbxMain = new System.Windows.Forms.GroupBox();
+            this.btnDestination = new System.Windows.Forms.Button();
+            this.tbxDestination = new System.Windows.Forms.TextBox();
+            this.lblDestination = new System.Windows.Forms.Label();
             this.tbxProjectName = new System.Windows.Forms.TextBox();
             this.lblProjectName = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.fbdDestination = new System.Windows.Forms.FolderBrowserDialog();
-            this.tbxDestination = new System.Windows.Forms.TextBox();
-            this.lblDestination = new System.Windows.Forms.Label();
-            this.btnDestination = new System.Windows.Forms.Button();
             this.gbxMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,33 @@
             this.gbxMain.Size = new System.Drawing.Size(475, 159);
             this.gbxMain.TabIndex = 0;
             this.gbxMain.TabStop = false;
+            // 
+            // btnDestination
+            // 
+            this.btnDestination.Location = new System.Drawing.Point(433, 17);
+            this.btnDestination.Name = "btnDestination";
+            this.btnDestination.Size = new System.Drawing.Size(26, 20);
+            this.btnDestination.TabIndex = 5;
+            this.btnDestination.Text = "...";
+            this.btnDestination.UseVisualStyleBackColor = true;
+            this.btnDestination.Click += new System.EventHandler(this.btnDestination_Click);
+            // 
+            // tbxDestination
+            // 
+            this.tbxDestination.Location = new System.Drawing.Point(86, 17);
+            this.tbxDestination.Name = "tbxDestination";
+            this.tbxDestination.Size = new System.Drawing.Size(341, 20);
+            this.tbxDestination.TabIndex = 4;
+            this.tbxDestination.Text = "C:/";
+            // 
+            // lblDestination
+            // 
+            this.lblDestination.Location = new System.Drawing.Point(6, 16);
+            this.lblDestination.Name = "lblDestination";
+            this.lblDestination.Size = new System.Drawing.Size(74, 22);
+            this.lblDestination.TabIndex = 3;
+            this.lblDestination.Text = "Destination";
+            this.lblDestination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbxProjectName
             // 
@@ -81,33 +108,6 @@
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
-            // tbxDestination
-            // 
-            this.tbxDestination.Location = new System.Drawing.Point(86, 17);
-            this.tbxDestination.Name = "tbxDestination";
-            this.tbxDestination.Size = new System.Drawing.Size(341, 20);
-            this.tbxDestination.TabIndex = 4;
-            this.tbxDestination.Text = "C:/";
-            // 
-            // lblDestination
-            // 
-            this.lblDestination.Location = new System.Drawing.Point(6, 16);
-            this.lblDestination.Name = "lblDestination";
-            this.lblDestination.Size = new System.Drawing.Size(74, 22);
-            this.lblDestination.TabIndex = 3;
-            this.lblDestination.Text = "Destination";
-            this.lblDestination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnDestination
-            // 
-            this.btnDestination.Location = new System.Drawing.Point(433, 17);
-            this.btnDestination.Name = "btnDestination";
-            this.btnDestination.Size = new System.Drawing.Size(26, 20);
-            this.btnDestination.TabIndex = 5;
-            this.btnDestination.Text = "...";
-            this.btnDestination.UseVisualStyleBackColor = true;
-            this.btnDestination.Click += new System.EventHandler(this.btnDestination_Click);
             // 
             // Form1
             // 
